@@ -25,7 +25,9 @@ class WPPress_RevolutionSlider_ACF_Field extends WPPress_ACF_Field
 		$slider = ob_get_contents();
 		ob_clean();
 		ob_end_clean();
-		return $slider;
+		$return['id'] = $data;
+		$return['slider'] = $slider;
+		return $return;
 	}
 	
 	/**

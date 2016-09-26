@@ -46,12 +46,12 @@ abstract class WPPress_ACF_Field extends acf_field
 		if (!empty($sliders)) {
 			foreach ($sliders as $key => $value) {
 				$selected = '';
-				if (is_array($field['value'])) {
-					if (in_array($key, $field['value'])) {
+				if (is_array($field['value']['id'])) {
+					if (in_array($key, $field['value']['id'])) {
 						$selected = 'selected="selected"';
 					}
 				} else {
-					if ($key == $field['value']) {
+					if ($key == $field['value']['id']) {
 						$selected = 'selected="selected"';
 					}
 				}
