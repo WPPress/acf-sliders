@@ -1,0 +1,10 @@
+{
+    "name": "thomasdebruin/acf-sliders",
+    "authors": [
+        {
+            "name": "Thomas de Bruin",
+            "email": "thomas@playid.nl"
+        }
+    ],
+    "require": {}
+}
