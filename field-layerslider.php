@@ -35,6 +35,7 @@ class WPPress_LayerSlider_ACF_Field extends WPPress_ACF_Field
 			'limit' => 100
 		));
 		$data=array();
+		$data[0] = 'none';
 		if($sliders){
 			foreach($sliders as $slide){
 				$data[$slide['id']]=$slide['name'];

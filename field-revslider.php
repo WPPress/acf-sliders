@@ -38,6 +38,7 @@ class WPPress_RevolutionSlider_ACF_Field extends WPPress_ACF_Field
 		$slider = new RevSlider();
 		$sliders = $slider->getArrSlidersShort();
 		$data = array();
+		$data[0] = 'none';
 		if (!empty($sliders)) {
 			foreach ($sliders as $key => $val) {
 				$data[$key] = $val;

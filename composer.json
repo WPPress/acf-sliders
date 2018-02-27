@@ -1,6 +1,7 @@
 {
     "name": "thomasdebruin/acf-sliders",
     "type": "wordpress-plugin",
+    "version": "0.2.0",
     "authors": [
         {
             "name": "Thomas de Bruin",

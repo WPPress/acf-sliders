@@ -30,6 +30,7 @@ class WPPress_RoyalSlider_ACF_Field extends WPPress_ACF_Field
 		$table = NewRoyalSliderMain::get_sliders_table_name();
 		$sliders = $wpdb->get_results( $wpdb->prepare("SELECT id, name FROM $table WHERE active=1  AND type!=%s",'gallery') );
 		$data = array();
+		$data[0] = 'none';
 		if (!empty($sliders)) {
 			foreach ($sliders as $slider) {
 				$data[$slider->id] = $slider->name;
